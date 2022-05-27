@@ -4,22 +4,17 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import style from "react-syntax-highlighter/dist/cjs/styles/prism/dracula";
 import Image from "next/image";
 
-import { Layout, SEO, Bio } from "@components/common";
+import { Layout, SEO } from "@components/common";
 import { getPostBySlug, getPostsSlugs } from "@utils/posts";
 
 export default function Post({ post, frontmatter, nextPost, previousPost }) {
   return (
     <Layout>
-      <SEO
-        title={frontmatter.title}
-        description={frontmatter.description || post.excerpt}
-      />
+      <SEO title={frontmatter.title} description={frontmatter.description || post.excerpt} />
 
       <article>
         <header className="mb-8">
-          <h1 className="mb-2 text-6xl font-black leading-none font-display">
-            {frontmatter.title}
-          </h1>
+          <h1 className="mb-2 text-6xl font-black leading-none font-display">{frontmatter.title}</h1>
           <p className="text-sm">{frontmatter.date}</p>
         </header>
         <ReactMarkdown
@@ -29,17 +24,13 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
           renderers={{ code: CodeBlock, image: MarkdownImage }}
         />
         <hr className="mt-4" />
-        <footer>
-          <Bio className="mt-8 mb-16" />
-        </footer>
+        <footer></footer>
       </article>
 
       <nav className="flex flex-wrap justify-between mb-10">
         {previousPost ? (
           <Link href={"/posts/[slug]"} as={`/posts/${previousPost.slug}`}>
-            <a className="text-lg font-bold">
-              ← {previousPost.frontmatter.title}
-            </a>
+            <a className="text-lg font-bold">← {previousPost.frontmatter.title}</a>
           </Link>
         ) : (
           <div />
@@ -89,11 +80,6 @@ const CodeBlock = ({ language, value }) => {
 
 const MarkdownImage = ({ alt, src }) => {
   return (
-    <Image
-      alt={alt}
-      src={require(`../../content/assets/${src}`)}
-      placeholder="blur"
-      className="w-full"
-    />
+    <Image alt={alt} src={require(`../../content/assets/${src}`)} placeholder="blur" className="w-full" />
   );
 };

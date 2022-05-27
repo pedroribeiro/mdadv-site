@@ -5,8 +5,20 @@
 @layer base {
   @import "./base.css";
 
+  @import "swiper/css";
+  @import "swiper/css/navigation";
+  @import "./swiper.css";
+
   a {
     @apply text-neon-orange dark:text-yellow-500;
+  }
+
+  html {
+    font-family: Proxima Nova, system-ui, sans-serif;
+  }
+
+  h1 {
+    @apply font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl;
   }
 }
 

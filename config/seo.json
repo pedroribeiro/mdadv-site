@@ -1,16 +1,16 @@
 {
   "siteMetadata": {
-    "title": "Next.js Starter Blog",
+    "title": "Medeiros Advogados",
     "author": {
-      "name": "Jose Felix",
-      "summary": "who works building clean user interfaces with React.",
-      "link": "https://jfelix.info"
+      "name": "Pedro Ribeiro",
+      "summary": "Software Engineer",
+      "link": "https://pedroribeiro.dev"
     },
-    "description": "A blog created with Next.js and Tailwind.css",
-    "siteUrl": "https://nextjs-starter-blog-new-demo.vercel.app/",
-    "language": "en-US",
+    "description": "Medeiros Advogados especializados em Direito Previdenciário",
+    "siteUrl": "https://medeirosadvogados.adv/",
+    "language": "pt-BR",
     "social": {
-      "twitter": "Jose_R_Felix"
+      "WppPhone": "+5521969759720"
     }
   }
 }

@@ -14,25 +14,21 @@ const defaultSans = [
   '"Noto Color Emoji"',
 ];
 
-const defaultSerif = [
-  "Georgia",
-  "Cambria",
-  '"Times New Roman"',
-  "Times",
-  "serif",
-];
+const defaultSerif = ["Georgia", "Cambria", '"Times New Roman"', "Times", "serif"];
 
 module.exports = {
   mode: "jit",
-  purge: [
-    "./components/**/*.{js,ts,jsx,tsx,css}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-  ],
+  purge: ["./components/**/*.{js,ts,jsx,tsx,css}", "./pages/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
   theme: {
     extend: {
       colors: {
         "neon-orange": "#f92300",
+        metal: {
+          light: "#A79B46",
+          DEFAULT: "#4f4f4f",
+          dark: "#4F5104",
+        },
       },
       fontSize: {
         "7xl": "4.5rem",
@@ -111,7 +107,8 @@ module.exports = {
     },
     fontFamily: {
       display: ["Open Sans", ...defaultSans],
-      body: ["Merriweather", ...defaultSerif],
+      // body: ["Merriweather", ...defaultSerif],
+      body: ["Arial", ...defaultSerif],
     },
   },
   variants: {},

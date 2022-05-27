@@ -4,7 +4,7 @@
   "description": "A Next.js template for a blog website.",
   "private": true,
   "engines": {
-    "node": "14"
+    "node": "16"
   },
   "scripts": {
     "dev": "next dev",
@@ -22,7 +22,7 @@
     "react-dom": "17.0.2",
     "react-markdown": "^5.0.3",
     "react-syntax-highlighter": "^15.4.5",
-    "react-toggle-dark-mode": "^1.0.4",
+    "swiper": "^8.1.5",
     "typeface-merriweather": "^1.1.13",
     "typeface-open-sans": "^1.1.13",
     "webp-loader": "^0.6.0"

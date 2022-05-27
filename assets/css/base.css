@@ -1,8 +1,9 @@
+
 a:hover {
   @apply underline;
 }
 
 span,
 p {
-  @apply font-light;
+  @apply font-light text-sm sm:text-lg md:text-xl lg:text-2xl;
 }
