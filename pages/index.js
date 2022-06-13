@@ -1,7 +1,6 @@
-import Link from "next/link";
 
 import { Layout, SEO, Carrousel, QuemSomos, CasosJulgados, NaMidia, Consultoria } from "@components/common";
-import { getSortedPosts } from "@utils/posts";
+import axios from "axios";
 
 export default function Home({ posts }) {
   return (
@@ -9,7 +8,7 @@ export default function Home({ posts }) {
       <SEO title="Medeiros Advogados" />
       <Carrousel />
       <QuemSomos />
-      <CasosJulgados />
+      <CasosJulgados posts={posts} />
       <NaMidia />
       <Consultoria />
       {/* {posts.map(({ frontmatter: { title, description, date }, slug }) => (
@@ -32,11 +31,11 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-  const posts = getSortedPosts();
+  const res = await axios.get(`http://medeirosadv.adv.br/wp-json/wp/v2/posts`);
 
   return {
     props: {
-      posts,
+      posts: res.data,
     },
   };
 }

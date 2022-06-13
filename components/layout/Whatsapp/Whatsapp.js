@@ -1,7 +1,6 @@
 import clsx from "clsx";
 
 export const WhatsApp = ({ showText, small }) => {
-  console.log(small)
   return (
     <div>
       <a

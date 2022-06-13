@@ -8,7 +8,7 @@ export const NaMidia = () => {
     setHidden(!hidden);
   };
   return (
-    <div className=" p-5">
+    <div id="na_midia" className="bg-[#f4f4f4] p-5">
       <div className="text-black text-center text-sm sm:text-lg">
         <h1>Participações na Mídia</h1>
         <br />
@@ -36,7 +36,7 @@ export const NaMidia = () => {
           <p className="italic font-thin">
             Entrevistas concedidas para a Rádio Tupi em 12/05/2016 e 13/05/2016.
           </p>
-          <iframe
+          {/* <iframe
             className="w-[280px] h-auto sm:w-[560px] sm:h-[315px]"
             src="https://www.youtube.com/embed/6xTxSsP5pFg"
             title="YouTube video player"
@@ -52,7 +52,7 @@ export const NaMidia = () => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-          ></iframe>
+          ></iframe> */}
           <br />
         </div>
 
@@ -68,7 +68,7 @@ export const NaMidia = () => {
           <p className="italic font-thin">
             Entrevistas concedidas para a Rádio Tupi em 12/05/2016 e 13/05/2016.
           </p>
-          <iframe
+          {/* <iframe
             className="w-[280px] h-auto sm:w-[560px] sm:h-[315px]"
             src="https://www.youtube.com/embed/6xTxSsP5pFg"
             title="YouTube video player"
@@ -84,7 +84,7 @@ export const NaMidia = () => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-          ></iframe>
+          ></iframe> */}
           <br />
         </div>
 

@@ -10,11 +10,15 @@
   @import "./swiper.css";
 
   a {
-    @apply text-neon-orange dark:text-yellow-500;
+    @apply text-[#999900];
   }
 
   html {
     font-family: Proxima Nova, system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-white;
   }
 
   h1 {

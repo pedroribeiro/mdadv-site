@@ -2,7 +2,7 @@ import { Button } from "@components/layout";
 
 export const Consultoria = () => {
   return (
-    <div className=" bg-[#E5E5E5] p-5">
+    <div id="consultoria_e_planejamento_previdenciario" className=" bg-[#E5E5E5] p-5">
       <div className="text-black text-center">
         <h1>Consultoria e Planejamento Previdenciário</h1>
         <br />
@@ -87,9 +87,11 @@ export const Consultoria = () => {
 
 const CallToAction = () => {
   return (
-    <div className="bg-metal-light w-full px-6">
+    <div className="bg-[#f4f4f4] w-full px-6">
       <div className="flex items-center justify-evenly text-white">
-        <p className="text-2xl sm:text-xl md:text-3xl lg:text-4xl">Tel: 3023-4081</p>
+        <a href="tel:2130234081">
+          <p className="text-2xl sm:text-xl md:text-3xl lg:text-4xl">Tel: 3023-4081</p>
+        </a>
         <a
           href="https://api.whatsapp.com/send?phone=+5521969759720&text=I'm%20interested%20in%20your%20services"
           target="_blank"
@@ -100,7 +102,11 @@ const CallToAction = () => {
             </div>
           </button>
         </a>
-        <p className={"text-2xl sm:text-xl md:text-3xl lg:text-4xl hidden sm:block"}>email: contato@medeirosadv.adv.br</p>
+        <a href="mailto:diogo@medeirosadv.adv.br">
+          <p className={"text-2xl sm:text-xl md:text-3xl lg:text-4xl hidden sm:block"}>
+            email: contato@medeirosadv.adv.br
+          </p>
+        </a>
       </div>
     </div>
   );

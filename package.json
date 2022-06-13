@@ -12,8 +12,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.4",
     "@svgr/webpack": "^6.1.1",
+    "axios": "^0.27.2",
     "clsx": "^1.1.1",
+    "dompurify": "^2.3.8",
     "feed": "^4.2.2",
     "next": "12.0.7",
     "next-compose-plugins": "^2.2.1",

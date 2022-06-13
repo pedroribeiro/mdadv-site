@@ -1,7 +1,7 @@
 import { Button } from "@/components/layout";
 export const QuemSomos = () => {
   return (
-    <div className="text-black text-center text-sm font-light sm:text-lg p-5">
+    <div id="quem_somos" className="bg-[#f4f4f4] text-black text-center text-sm font-light sm:text-lg p-5">
       <h1>Quem Somos</h1>
 
       <br />
