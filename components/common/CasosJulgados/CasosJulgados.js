@@ -1,13 +1,18 @@
 import { useState } from "react";
 import { Divider } from "@components/layout";
 import Link from "next/link";
-// import { Button } from "@components/layout";
-// import clsx from "clsx";
+import { Button } from "@components/layout";
+import clsx from "clsx";
 
 export const CasosJulgados = ({ posts }) => {
-  const [hidden, setHidden] = useState(true);
+  const [hidden, setHidden] = useState(3);
+
   const handleClick = () => {
-    setHidden(!hidden);
+    if (hidden >= posts.length) {
+      setHidden(3);
+    } else {
+      setHidden((hidden) => hidden + 3);
+    }
   };
 
   return (
@@ -18,43 +23,37 @@ export const CasosJulgados = ({ posts }) => {
           <h1>Casos Julgados</h1>
           <br />
 
-          <div className="italic">
-            <p className="font-bold">
-              Confira abaixo as mais recentes decisões obtidas por nosso escritório:
-            </p>
-
-            <br />
-            {posts.map((post, index) => {
-              return (
-                <>
-                  <article key={post.slug}>
-                    <header className="mb-2">
-                      <h3 className="mb-2">
-                        <Link href={"/posts/[id]"} as={`/posts/${post.id}`}>
-                          <a target="_blank" className="font-bold italic text-xl sm:text-3xl">
-                            {post.title.rendered}
-                          </a>
-                        </Link>
-                      </h3>
-                    </header>
-                    <section>
-                      <div
-                        className="mb-8 text-sm"
-                        dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
-                      ></div>
-                    </section>
-                  </article>
-                  {/* <br />
-
-                <p>{post.title.rendered}</p>
-                <br /> */}
-                </>
-              );
-            })}
-          </div>
+          <p className="font-bold">Confira abaixo as mais recentes decisões obtidas por nosso escritório:</p>
 
           <br />
-          {/* <Button text={hidden ? "Veja mais" : "Veja menos"} size={8} handleClick={handleClick} /> */}
+
+          {posts.map((post, index) => {
+            const show = index < hidden;
+
+            return (
+              <div key={index} className={clsx("block", { hidden: !show })}>
+                <article key={post.slug}>
+                  <header className="mb-2">
+                    <h3 className="mb-2">
+                      <Link href={"/posts/[id]"} as={`/posts/${post.id}`}>
+                        <a target="_blank" className="font-bold italic text-xl sm:text-3xl">
+                          {post.title.rendered}
+                        </a>
+                      </Link>
+                    </h3>
+                  </header>
+                </article>
+                <br />
+              </div>
+            );
+          })}
+
+          <br />
+          <Button
+            text={hidden <= posts.length ? "Veja mais" : "Veja menos"}
+            size={8}
+            handleClick={handleClick}
+          />
         </div>
       </div>
       <Divider />

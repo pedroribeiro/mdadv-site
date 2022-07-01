@@ -1,4 +1,4 @@
-import { MenuHeader } from "@components/layout";
+import cslx from "clsx";
 
 import { useRouter } from "next/router";
 
@@ -8,7 +8,7 @@ export function Layout({ children }) {
       <div className=" relative max-w-screen-lg px-1 mx-auto antialiased font-body">
         <Header />
         <main>{children}</main>
-        <FixedWhatsApp />
+        <FixedWhatsApp fixed={false} />
         <Footer />
       </div>
     </div>
@@ -21,12 +21,32 @@ const Header = () => {
   const isRoot = pathname === "/";
 
   return (
-    <header className={"flex bg-[#f4f4f4] items-center justify-around h-20 px-1 sm:h-40 lg:h-60"}>
-      <a href="#casos_julgados">
-        <Logo />
-      </a>
-      <Adress />
-      {isRoot ? <MenuHeader /> : null}
+    <header className={"bg-[#f4f4f4] p-2"}>
+      <div className="flex items-center justify-around">
+        <a href="#casos_julgados">
+          <Logo />
+        </a>
+        <Adress />
+        <FixedWhatsApp fixed />
+        {/* {isRoot ? <MenuHeader /> : null} */}
+      </div>
+      <div className="flex items-center justify-around mt-4">
+        <a href="#quem_somos">
+          <p className={"text-xs sm:text-lg md:text-xl lg:text-2xl"}>Quem Somos</p>
+        </a>
+        <a href="#casos_julgados">
+          <p className={"text-xs sm:text-lg md:text-xl lg:text-2xl"}>Casos Julgados</p>
+        </a>
+        <a href="#na_midia">
+          <p className={"text-xs sm:text-lg md:text-xl lg:text-2xl"}>Na mídia</p>
+        </a>
+        <a className={"text-xs sm:hidden"} href="#consultoria_e_planejamento_previdenciario">
+          <p className={"text-xs sm:hidden"}>Planejamento</p>
+        </a>
+        <a href="#consultoria_e_planejamento_previdenciario">
+          <p className={"hidden sm:block"}>Planejamento Previdenciário</p>
+        </a>
+      </div>
     </header>
   );
 };
@@ -34,17 +54,11 @@ const Header = () => {
 const Adress = () => (
   <div className="mt-2 text-xs sm:text-lg md:text-2xl ">
     <a href="tel:2130234081">
-      <p className={""}>Tel: (21) 3023-4081</p>
+      <p className={"text-xs sm:text-lg md:text-xl lg:text-2xl"}>Tel: (21) 3023-4081</p>
     </a>
 
-    <a
-      href="https://api.whatsapp.com/send?phone=+5521969759720&text=I'm%20interested%20in%20your%20services"
-      target="_blank"
-    >
-      <p className={""}>Cel: (21) 99999-9999</p>
-    </a>
     <a href="mailto:diogo@medeirosadv.adv.br">
-      <p className={"hidden sm:block"}>contato@medeirosadv.adv.br</p>
+      <p className={"text-xs sm:text-lg md:text-xl lg:text-2xl"}>contato@medeirosadv.adv.br</p>
     </a>
   </div>
 );
@@ -55,20 +69,22 @@ const Logo = () => (
   </div>
 );
 
-const FixedWhatsApp = () => (
-  <div className="fixed bottom-1 right-3">
-    <a
-      href="https://api.whatsapp.com/send?phone=+5521969759720&text=I'm%20interested%20in%20your%20services"
-      target="_blank"
-    >
-      <button>
-        <div className={"w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20"}>
-          <img className={"object-contain w-full h-full"} src="/logo_wpp.svg" />
-        </div>
-      </button>
-    </a>
-  </div>
-);
+const FixedWhatsApp = ({ fixed }) => {
+  return (
+    <div className={cslx("mt-2", { "fixed bottom-1 right-3": !fixed })}>
+      <a
+        href="https://api.whatsapp.com/send?phone=+5521969759720&text=I'm%20interested%20in%20your%20services"
+        target="_blank"
+      >
+        <button>
+          <div className={cslx("sm:w-20 sm:h-20 lg:w-24 lg:h-24", { "w-14 h-14": !fixed })}>
+            <img className={"object-contain w-full h-full"} src="/logo_wpp.svg" />
+          </div>
+        </button>
+      </a>
+    </div>
+  );
+};
 
 const Footer = () => (
   <footer>
