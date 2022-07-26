@@ -2,31 +2,41 @@ import { Button } from "@components/layout";
 
 export const Consultoria = () => {
   return (
-    <div id="consultoria_e_planejamento_previdenciario" className=" bg-[#E5E5E5] p-5">
+    <section id="consultoria_e_planejamento_previdenciario" className=" bg-[#E5E5E5] p-5">
       <div className="text-black text-center">
         <h1>Consultoria e Planejamento Previdenciário</h1>
         <br />
 
         <div className="flex flex-col items-center justify-between">
           <p>
-            Dada a complexidade da matéria e a constante alteração legislativa, é imprescindível a assistência
-            de profissional especialista para elucidar dúvidas e evitar possíveis prejuízos.
+            Considerando a complexidade da legislação previdenciária e a constante alteração da mesma, vista,
+            por exemplo, com a recente reforma promovida pela Emenda Constitucional 103/19, é essencial a
+            assistência de advogado especialista para orientação visando a obtenção do melhor benefício.
           </p>
 
           <br />
 
           <p>
-            Oferecemos serviço de consultoria, assessorando nossos clientes em todo e qualquer assunto
-            pertinente ao Direito Previdenciário, sobretudo no que tange ao Regime Geral de Previdência
-            (INSS).
+            Oferecemos consultoria e planejamento previdenciário, contabilizando tempo de contribuição,
+            analisando formulários e laudos técnicos, projetando valor de aposentadoria e esclarecendo todas
+            as dúvidas.
           </p>
 
           <br />
+
+          <p>
+            Atendemos mediante agendamento de reunião presencial em nosso escritório ou à distância,
+            fornecendo todos os dados e respostas que nossos clientes precisam sem que tenham que sair de seus
+            lares.
+          </p>
+
+          <br />
+
           <CallToAction />
 
           <br />
 
-          <Button text={"INFORMAÇÕES IMPORTANTES"} disabled />
+          {/* <Button text={"INFORMAÇÕES IMPORTANTES"} disabled />
 
           <br />
 
@@ -78,10 +88,10 @@ export const Consultoria = () => {
           <br />
 
           <p className="italic">INSS - Memória de Cálculo do Benefício</p>
-          <br />
+          <br /> */}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -93,7 +103,7 @@ const CallToAction = () => {
           <p className="text-2xl sm:text-xl md:text-3xl lg:text-4xl">Tel: 3023-4081</p>
         </a>
         <a
-          href="https://api.whatsapp.com/send?phone=+5521969759720&text=I'm%20interested%20in%20your%20services"
+          href="https://api.whatsapp.com/send?phone=+5521992552687&text=Olá%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20serviços"
           target="_blank"
         >
           <button className="mt-2">

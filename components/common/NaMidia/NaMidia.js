@@ -8,7 +8,7 @@ export const NaMidia = () => {
     setHidden(!hidden);
   };
   return (
-    <div id="na_midia" className="bg-[#f4f4f4] p-5">
+    <section id="na_midia" className="bg-[#f4f4f4] p-5">
       <div className="text-black text-center text-sm sm:text-lg">
         <h1>Participações na Mídia</h1>
         <br />
@@ -93,6 +93,6 @@ export const NaMidia = () => {
         <br />
         <br />
       </div>
-    </div>
+    </section>
   );
 };

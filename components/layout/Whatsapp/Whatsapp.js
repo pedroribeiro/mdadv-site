@@ -5,7 +5,7 @@ export const WhatsApp = ({ showText, small }) => {
     <div>
       <a
         className="text-black hover:text-blue-800 "
-        href="https://api.whatsapp.com/send?phone=+5521969759720&text=I'm%20interested%20in%20your%20services"
+        href="https://api.whatsapp.com/send?phone=+5521992552687&text=Olá%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20serviços"
         target="_blank"
       >
         <button className="">

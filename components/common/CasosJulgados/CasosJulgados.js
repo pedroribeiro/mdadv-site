@@ -18,13 +18,19 @@ export const CasosJulgados = ({ posts }) => {
   return (
     <>
       <Divider />
-      <div id="casos_julgados" className="p-5">
-        <div className="text-black text-center">
-          <h1>Casos Julgados</h1>
+      <section id="casos_julgados" className="bg-[#E5E5E5] text-black text-center">
+
+        <br />
+        <h1>Casos Julgados</h1>
+        <br />
+
+        <div className="flex">
+          <InSlide2 />
+          <InSlide1 />
+        </div>
+
+        <div className="p-5">
           <br />
-
-          <p className="font-bold">Confira abaixo as mais recentes decisões obtidas por nosso escritório:</p>
-
           <br />
 
           {posts.map((post, index) => {
@@ -55,10 +61,34 @@ export const CasosJulgados = ({ posts }) => {
             handleClick={handleClick}
           />
         </div>
-      </div>
+      </section>
       <Divider />
     </>
   );
 };
 // http://medeirosadv.adv.br/wp-json/wp/v2/posts
 // http://medeirosadv.adv.br/wp-json/wp/v2/posts/{id}
+
+const InSlide1 = () => {
+  return (
+    <SlideContainer>
+      <div className="text-white text-center text-sm font-light sm:text-lg p-5">
+        <p className="font-bold">Confira abaixo as mais recentes decisões obtidas por nosso escritório</p>
+      </div>
+    </SlideContainer>
+  );
+};
+
+const InSlide2 = () => {
+  return (
+    <SlideContainer>
+      <img className={"object-cover w-full h-full"} src="/casosJulgados.jpg" />
+    </SlideContainer>
+  );
+};
+
+const SlideContainer = ({ children }) => {
+  return (
+    <div className="bg-metal flex items-center justify-center bg-metal h-40 sm:h-80 w-full">{children}</div>
+  );
+};

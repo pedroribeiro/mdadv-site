@@ -30,7 +30,7 @@ const Header = () => {
         <FixedWhatsApp fixed />
         {/* {isRoot ? <MenuHeader /> : null} */}
       </div>
-      <div className="flex items-center justify-around mt-4">
+      <nav className="flex items-center justify-around mt-4">
         <a href="#quem_somos">
           <p className={"text-xs sm:text-lg md:text-xl lg:text-2xl"}>Quem Somos</p>
         </a>
@@ -46,7 +46,7 @@ const Header = () => {
         <a href="#consultoria_e_planejamento_previdenciario">
           <p className={"hidden sm:block"}>Planejamento Previdenciário</p>
         </a>
-      </div>
+      </nav>
     </header>
   );
 };
@@ -73,7 +73,7 @@ const FixedWhatsApp = ({ fixed }) => {
   return (
     <div className={cslx("mt-2", { "fixed bottom-1 right-3": !fixed })}>
       <a
-        href="https://api.whatsapp.com/send?phone=+5521969759720&text=I'm%20interested%20in%20your%20services"
+        href="https://api.whatsapp.com/send?phone=+5521992552687&text=Olá%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20serviços"
         target="_blank"
       >
         <button>

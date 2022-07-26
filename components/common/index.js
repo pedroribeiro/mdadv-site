@@ -5,3 +5,5 @@ export * from "./Carrousel";
 export * from "./CasosJulgados";
 export * from "./NaMidia";
 export * from "./Consultoria";
+export * from "./Insalubridade";
+export * from "./Revisao";
