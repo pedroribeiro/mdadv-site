@@ -91,7 +91,6 @@ export const NaMidia = () => {
         <br />
         <Button text={hidden ? "Veja mais" : "Veja menos"} size={8} handleClick={handleClick} ligth />
         <br />
-        <br />
       </div>
     </section>
   );
