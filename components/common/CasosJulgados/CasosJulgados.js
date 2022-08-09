@@ -17,7 +17,6 @@ export const CasosJulgados = ({ posts }) => {
 
   return (
     <>
-      <Divider />
       <section id="casos_julgados" className="bg-[#E5E5E5] text-black text-center">
 
         <br />
@@ -62,12 +61,9 @@ export const CasosJulgados = ({ posts }) => {
           />
         </div>
       </section>
-      <Divider />
     </>
   );
 };
-// http://medeirosadv.adv.br/wp-json/wp/v2/posts
-// http://medeirosadv.adv.br/wp-json/wp/v2/posts/{id}
 
 const InSlide1 = () => {
   return (

@@ -47,6 +47,11 @@ export const QuemSomos = () => {
       </p>
 
       <br />
+      <p>
+        Assim, já consagrados como referência na advocacia previdenciária do Rio de Janeiro, pautamos nossa
+        atuação com base nos seguintes compromissos com nossos clientes:
+      </p>
+      <br />
 
       <div className={clsx("flex flex-col items-center", { hidden: hidden })}>
         <ButtonCombo
