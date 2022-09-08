@@ -159,7 +159,7 @@ export const NaMidia = () => {
             loading="lazy"
             class="aligncenter size-full wp-image-325"
             title="reportagem-oglobo"
-            src="http://medeirosadv.adv.br/wp-content/uploads/2010/11/reportagem-oglobo.jpg"
+            src="reportagem-oglobo.jpg"
             alt=""
             width="286"
             height="485"
