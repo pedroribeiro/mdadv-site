@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 export function Layout({ children }) {
   return (
     <div className="w-full min-h-screen">
-      <div className=" relative max-w-screen-lg px-1 mx-auto antialiased font-body">
+      <div className=" relative max-w-screen-xl px-1 mx-auto antialiased font-body">
         <Header />
         <main>{children}</main>
         <FixedWhatsApp fixed={false} />
@@ -28,25 +28,26 @@ const Header = () => {
         </a>
         <Adress />
         <FixedWhatsApp fixed />
-        {/* {isRoot ? <MenuHeader /> : null} */}
       </div>
-      <nav className="flex items-center justify-around mt-4">
-        <a href="#quem_somos">
-          <p className={"text-xs sm:text-lg md:text-xl lg:text-2xl"}>Quem Somos</p>
-        </a>
-        <a href="#casos_julgados">
-          <p className={"text-xs sm:text-lg md:text-xl lg:text-2xl"}>Casos Julgados</p>
-        </a>
-        <a href="#na_midia">
-          <p className={"text-xs sm:text-lg md:text-xl lg:text-2xl"}>Na mídia</p>
-        </a>
-        <a className={"text-xs sm:hidden"} href="#consultoria_e_planejamento_previdenciario">
-          <p className={"text-xs sm:hidden"}>Planejamento</p>
-        </a>
-        <a href="#consultoria_e_planejamento_previdenciario">
-          <p className={"hidden sm:block"}>Planejamento Previdenciário</p>
-        </a>
-      </nav>
+      {isRoot &&
+        <nav className="flex items-center justify-around mt-4">
+          <a href="#quem_somos">
+            <p className={"text-xs sm:text-lg md:text-xl lg:text-2xl"}>Quem Somos</p>
+          </a>
+          <a href="#casos_julgados">
+            <p className={"text-xs sm:text-lg md:text-xl lg:text-2xl"}>Casos Julgados</p>
+          </a>
+          <a href="#na_midia">
+            <p className={"text-xs sm:text-lg md:text-xl lg:text-2xl"}>Na mídia</p>
+          </a>
+          <a className={"text-xs sm:hidden"} href="#consultoria_e_planejamento_previdenciario">
+            <p className={"text-xs sm:hidden"}>Planejamento</p>
+          </a>
+          <a href="#consultoria_e_planejamento_previdenciario">
+            <p className={"hidden sm:block"}>Planejamento Previdenciário</p>
+          </a>
+        </nav>
+      }
     </header>
   );
 };

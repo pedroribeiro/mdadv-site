@@ -1,8 +1,6 @@
-import { Button } from "@components/layout";
-
 export const Consultoria = () => {
   return (
-    <section id="consultoria_e_planejamento_previdenciario" className=" bg-[#E5E5E5] p-5">
+    <section id="consultoria_e_planejamento_previdenciario" className="bg-[#E5E5E5] p-5">
       <div className="text-black text-center">
         <h1>Consultoria e Planejamento Previdenciário</h1>
         <br />

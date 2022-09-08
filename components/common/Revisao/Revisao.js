@@ -1,6 +1,6 @@
 export const Revisao = () => {
   return (
-    <section id="revisao" className="bg-[#E5E5E5] text-black text-center text-sm font-light sm:text-lg p-5">
+    <section id="revisao" className="bg-[#f4f4f4] text-black text-center text-sm font-light sm:text-lg p-5">
       <h1>Revisão da Vida Toda - Possibilidade de obter significativo aumento no valor da aposentadoria </h1>
 
       <br />

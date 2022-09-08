@@ -20,9 +20,9 @@ export default function Home({ posts }) {
       <QuemSomos />
       <CasosJulgados posts={posts} />
       <NaMidia />
-      <Consultoria />
       <Insalubridade />
       <Revisao />
+      <Consultoria />
     </Layout>
   );
 }
