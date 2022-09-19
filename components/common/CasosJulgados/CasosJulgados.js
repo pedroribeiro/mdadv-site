@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Divider } from "@components/layout";
 import Link from "next/link";
 import { Button } from "@components/layout";
 import clsx from "clsx";
+import { Title } from "@components/layout/Title";
 
 export const CasosJulgados = ({ posts }) => {
   const [hidden, setHidden] = useState(3);
@@ -17,9 +17,12 @@ export const CasosJulgados = ({ posts }) => {
 
   return (
     <>
-      <section id="casos_julgados" className="bg-[#E5E5E5] text-black text-center">
+      <section id="casos_julgados" className="text-black text-center full-bleed-dark-grey">
+
         <br />
-        <h1>Casos Julgados</h1>
+
+        <Title text={"Casos Julgados"} icon="balanca" />
+
         <br />
 
         <div className="flex">
@@ -94,6 +97,6 @@ const InSlide2 = () => {
 
 const SlideContainer = ({ children }) => {
   return (
-    <div className="bg-metal flex items-center justify-center bg-metal h-40 sm:h-80 w-full">{children}</div>
+    <div className="flex items-center justify-center bg-metal h-40 sm:h-80 w-full">{children}</div>
   );
 };

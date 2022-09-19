@@ -1,6 +1,7 @@
 import { useState } from "react";
 import clsx from "clsx";
 import { Button } from "@components/layout";
+import { Title } from "@components/layout/Title";
 
 export const NaMidia = () => {
   const [hidden, setHidden] = useState(true);
@@ -8,15 +9,15 @@ export const NaMidia = () => {
     setHidden(!hidden);
   };
   return (
-    <section id="na_midia" className="bg-[#f4f4f4] p-5">
+    <section id="na_midia" className="full-bleed-ligth-grey p-5">
       <div className="text-black text-center text-sm sm:text-lg">
-        <h1>Participações na Mídia</h1>
+        <Title text={"Participações na Mídia"} icon="news" />
         <br />
 
         <div className="flex flex-col items-center">
           <p>
-            Fruto do destaque obtido em sua atuação, o escritório Medeiros Advogados é constantemente
-            convidado a colaborar com a imprensa em pautas atinentes ao Direito Previdenciário.
+            Fruto do destaque obtido por nossa atuação, somos constantemente convidados a colaborar com jornais,
+            sites e emissoras de rádio e televisão em pautas relativas ao Direito Previdenciário
           </p>
 
           <br />
@@ -131,7 +132,7 @@ export const NaMidia = () => {
             className="w-[280px] h-auto sm:w-[560px] sm:h-[315px]"
             src="https://www.youtube.com/embed/A6sp8jWwwBQ"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
@@ -173,7 +174,7 @@ export const NaMidia = () => {
             className="w-[280px] h-auto sm:w-[560px] sm:h-[315px]"
             src="https://www.youtube.com/embed/LVyGA2eUgGw"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
@@ -189,7 +190,7 @@ export const NaMidia = () => {
             className="w-[280px] h-auto sm:w-[560px] sm:h-[315px]"
             src="https://www.youtube.com/embed/C4TMT_2kGBI"
             title="Reportagem band inss"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>

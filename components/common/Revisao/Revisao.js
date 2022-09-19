@@ -1,8 +1,11 @@
+import { Title } from "@components/layout/Title";
+
 export const Revisao = () => {
   return (
-    <section id="revisao" className="bg-[#f4f4f4] text-black text-center text-sm font-light sm:text-lg p-5">
-      <h1>Revisão da Vida Toda - Possibilidade de obter significativo aumento no valor da aposentadoria </h1>
-
+    <section id="revisao" className="full-bleed-ligth-grey text-black text-center text-sm font-light sm:text-lg p-5">
+      <Title text={"Revisão da Vida Toda "} icon="person" />
+      -
+      <h2>Possibilidade de obter aumento no valor da aposentadoria</h2>
       <br />
 
       <p>

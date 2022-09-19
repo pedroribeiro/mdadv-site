@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/layout";
 import clsx from "clsx";
+import { Title } from "@components/layout/Title";
 
 export const Insalubridade = () => {
   const [hidden, setHidden] = useState(true);
@@ -12,9 +13,12 @@ export const Insalubridade = () => {
   return (
     <section
       id="insalubridade"
-      className="bg-[#E5E5E5] text-black text-center text-sm font-light sm:text-lg p-5"
+      className="full-bleed-dark-grey text-black text-center text-sm font-light sm:text-lg p-5"
     >
-      <h1>Insalubridade e Periculosidade - Concessão e revisão de aposentadorias especiais</h1>
+
+      <Title text={"Insalubridade e Periculosidade"} icon="health" />
+      -
+      <h2>Concessão e revisão de aposentadorias especiais</h2>
 
       <br />
 
@@ -107,7 +111,6 @@ export const Insalubridade = () => {
         <br />
         <a href="">Processo n. 0171616-78.2017.4.02.5101</a>
         <br />
-
         <h2>- Exposição a correntes elétricas superiores a 250 volts: </h2>
         <br />
         <a href="">Processo n. 5001556-65.2019.4.02.5117</a>

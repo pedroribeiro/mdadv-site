@@ -28,8 +28,35 @@
   h2 {
     @apply font-bold text-xl sm:text-xl md:text-2xl lg:text-3xl;
   }
+
+  :root {
+    --custom-ligth-grey: #E5E5E5;
+    --custom-dark-grey: #f4f4f4;
+    --custom-metal: #4f4f4f;
+  }
+
 }
 
 @layer components {
   @import "./components.css";
 }
+
+.full-bleed-ligth-grey {
+  background-color: var(--custom-ligth-grey);
+  box-shadow: 0 0 0 100vmax var(--custom-ligth-grey);
+  clip-path: inset(0 -100vmax);
+}
+
+.full-bleed-dark-grey {
+  background-color: var(--custom-dark-grey);
+  box-shadow: 0 0 0 100vmax var(--custom-dark-grey);
+  clip-path: inset(0 -100vmax);
+}
+
+.full-bleed-metal {
+  background-color: var(--custom-metal);
+  box-shadow: 0 0 0 100vmax var(--custom-metal);
+  clip-path: inset(0 -100vmax);
+}
+
+

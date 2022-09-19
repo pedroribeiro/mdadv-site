@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/layout";
 import clsx from "clsx";
+import { Title } from "@components/layout/Title";
 
 export const QuemSomos = () => {
   const [hidden, setHidden] = useState(true);
@@ -12,14 +13,15 @@ export const QuemSomos = () => {
   return (
     <section
       id="quem_somos"
-      className="bg-[#f4f4f4] text-black text-center text-sm font-light sm:text-lg p-5"
+      className="text-black text-center text-sm font-light sm:text-lg p-5 full-bleed-ligth-grey"
     >
-      <h1>Quem Somos</h1>
+
+      <Title text={"Quem Somos"} icon="persons" />
 
       <br />
 
       <p>
-        Desde 2008, com escritório a poucos metros de distância da sede da Justiça Federal, atuamos apenas na
+        Com escritório a poucos metros de distância da sede da Justiça Federal, atuamos apenas na
         área do direito previdenciário.
       </p>
 
@@ -34,7 +36,7 @@ export const QuemSomos = () => {
       <br />
 
       <p>
-        Focados exclusivamente na área do direito previdenciário há mais de 14 anos, aliamos a técnica, obtida
+        No exercício da advocacia previdenciária há mais de 14 anos, aliamos a técnica, obtida
         em estudos aprofundados, com a experiência, adquirida no patrocínio de mais de dois mil processos
         previdenciários, para alcançar os melhores resultados em favor dos nossos clientes.
       </p>

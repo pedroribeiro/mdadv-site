@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 export function Layout({ children }) {
   return (
     <div className="w-full min-h-screen">
-      <div className=" relative max-w-screen-xl px-1 mx-auto antialiased font-body">
+      <div className="relative max-w-screen-xl px-1 mx-auto antialiased font-body">
         <Header />
         <main>{children}</main>
         <FixedWhatsApp fixed={false} />
@@ -21,7 +21,7 @@ const Header = () => {
   const isRoot = pathname === "/";
 
   return (
-    <header className={"bg-[#f4f4f4] p-2"}>
+    <header className={"full-bleed-dark-grey p-2"}>
       <div className="flex items-center justify-around">
         <a href="#casos_julgados">
           <Logo />
@@ -89,11 +89,11 @@ const FixedWhatsApp = ({ fixed }) => {
 
 const Footer = () => (
   <footer>
-    <div className="bg-metal flex items-center justify-center h-40 p-5">
+    <div className="full-bleed-metal flex items-center justify-center h-40 p-5">
       <div className="text-white text-center text-sm font-light sm:text-lg">
         <p>Tel: 021 3023-4081 | Email: contato@medeirosadv.adv.br</p>
 
-        <p>Endereço: Av. Rio Branco nº25, Grupo 905, Centro</p>
+        <p>Endereço: Av. Rio Branco nº26, Sobreloja, Centro</p>
 
         <p>Rio de Janeiro - RJ</p>
       </div>

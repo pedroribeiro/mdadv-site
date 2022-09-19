@@ -6,31 +6,33 @@ import { Swiper, SwiperSlide } from "swiper/react";
 export const Carrousel = () => {
   return (
     <>
-      <Divider />
-      <Swiper
-        modules={[Navigation]}
-        spaceBetween={0}
-        slidesPerView={2}
-        navigation
-        pagination={{ clickable: true }}
-      >
-        <SwiperSlide>
-          <Slide1 />
-        </SwiperSlide>
+      <div className="full-bleed-dark-grey">
+        <Divider />
+        <Swiper
+          modules={[Navigation]}
+          spaceBetween={0}
+          slidesPerView={2}
+          navigation
+          pagination={{ clickable: true }}
+        >
+          <SwiperSlide>
+            <Slide1 />
+          </SwiperSlide>
 
-        <SwiperSlide>
-          <Slide2 />
-        </SwiperSlide>
+          <SwiperSlide>
+            <Slide2 />
+          </SwiperSlide>
 
-        <SwiperSlide>
-          <Slide3 />
-        </SwiperSlide>
+          <SwiperSlide>
+            <Slide3 />
+          </SwiperSlide>
 
-        {/* <SwiperSlide>
+          {/* <SwiperSlide>
           <Slide4 />
         </SwiperSlide> */}
-      </Swiper>
-      <Divider />
+        </Swiper>
+        <Divider />
+      </div>
     </>
   );
 };
@@ -40,9 +42,8 @@ const Slide1 = () => {
     <SlideContainer>
       <div className="text-white text-center text-sm font-light sm:text-lg p-5">
         <p>
-          Há 14 anos atuando apenas com Direito Previdenciário em todo estado do Rio de Janeiro. Advocacia de
-          excelência para concessão e revisão de aposentadorias e pensões do Regime Geral de Previdência
-          Social.
+          Desde 2008 atuando apenas com Direito Previdenciário em todo estado do Rio de Janeiro,
+          somos advogados especialistas em ações para concessão e revisão de benefícios do INSS.
         </p>
       </div>
     </SlideContainer>
