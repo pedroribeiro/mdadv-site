@@ -60,11 +60,11 @@ const Slide2 = () => {
 
 const Slide3 = () => {
   return (
-    <div className="bg-[#E5E5E5] flex items-center justify-center h-44 sm:h-80 w-full text-white text-center text-sm font-light sm:text-lg p-5">
+    <div className="bg-[#E5E5E5] flex items-center justify-center h-44 sm:h-80 w-full text-center text-sm font-light sm:text-lg p-5 judgement-bg bg-cover ">
       <a href="#insalubridade">
-        <p>Insalubridade e periculosidade</p>
-        <p>-</p>
-        <p>Concessão e revisão de aposentadorias especiais</p>
+        <p className="text-white text-shadow-lg">Insalubridade e periculosidade</p>
+        <p className="text-white">-</p>
+        <p className="text-white text-shadow-lg">Concessão e revisão de aposentadorias especiais</p>
       </a>
     </div>
   );

@@ -134,7 +134,7 @@ export const NaMidia = () => {
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
 
           <br />
@@ -158,7 +158,7 @@ export const NaMidia = () => {
           <br />
           <img
             loading="lazy"
-            class="aligncenter size-full wp-image-325"
+            className="aligncenter size-full wp-image-325"
             title="reportagem-oglobo"
             src="reportagem-oglobo.jpg"
             alt=""
@@ -192,7 +192,7 @@ export const NaMidia = () => {
             title="Reportagem band inss"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
 
           <br />

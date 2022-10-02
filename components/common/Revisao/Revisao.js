@@ -92,25 +92,25 @@ export const Revisao = () => {
       </h2>
 
       <br />
-      <a href="http://medeirosadv.adv.br/wp-content/uploads/2022/02/decisaovidatoda1.pdf">
+      <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2022/02/decisaovidatoda1.pdf">
         Processo 5004093-48.2020.4.02.5101
       </a>
       <br />
 
       <br />
-      <a href="http://medeirosadv.adv.br/wp-content/uploads/2022/02/decisaovidatoda2.pdf">
+      <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2022/02/decisaovidatoda2.pdf">
         Processo 5008173-55.2020.4.02.5101
       </a>
       <br />
 
       <br />
-      <a href="http://medeirosadv.adv.br/wp-content/uploads/2022/02/decisaovidatoda3.pdf">
+      <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2022/02/decisaovidatoda3.pdf">
         Confira o voto decisivo do Ministro Alexandre de Moraes: RE 1.276.977
       </a>
       <br />
 
       <br />
-      <a href="ttp://medeirosadv.adv.br/wp-content/uploads/2022/02/voto-alexandre-revisao-vida-toda1.pdf">
+      <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2022/02/voto-alexandre-revisao-vida-toda1.pdf">
         Processo n. 5002016-73.2019.4.02.5110
       </a>
       <br />
