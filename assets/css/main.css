@@ -23,6 +23,7 @@
 
   h1 {
     @apply font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl;
+    text-shadow: 1px 1px 1px #000000;
   }
 
   h2 {
@@ -60,21 +61,17 @@
 }
 
 .judgement-bg {
-  background-image: url("../../public/judgement.jpg");
+  background-image: url("../../public/lib.jpg");
 }
 
-.text-shadow {
-    text-shadow: 0 2px 4px rgba(0,0,0,0.10);
-  }
+.lib-bg {
+  background-image: url("../../public/lib2.jpg");
+}
 
-  .text-shadow-md {
-    text-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
-  }
+.text-shadow-lg {
+   text-shadow: 0 0 4px #000000;
+}
 
-  .text-shadow-lg {
-    text-shadow: 0 0 4px #000000;
-  }
-
-  .text-shadow-none {
+.text-shadow-none {
     text-shadow: none;
-  }
+}
