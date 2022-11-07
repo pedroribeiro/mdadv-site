@@ -68,6 +68,11 @@
   background-image: url("../../public/lib2.jpg");
 }
 
+
+.office-bg {
+  background-image: url("../../public/escritorio.jpg");
+}
+
 .text-shadow-lg {
    text-shadow: 0 0 4px #000000;
 }

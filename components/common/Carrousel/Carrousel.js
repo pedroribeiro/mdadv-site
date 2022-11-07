@@ -21,6 +21,16 @@ export const Carrousel = () => {
 
   }, [slides, setSlides, width])
 
+
+  useEffect(() => {
+    if (width >= 450) {
+      setSlides(2)
+    } else {
+      setSlides(1)
+    }
+  })
+
+
   return (
     <>
       <div className="full-bleed-dark-grey">
@@ -58,9 +68,8 @@ const Slide1 = () => {
   return (
     <SlideContainer>
 
-      <div className="bg-[#E5E5E5] flex items-center justify-center h-44 sm:h-80 w-full text-center text-sm font-light sm:text-lg p-5 lib-bg bg-cover">
-        {/* <div className="text-white text-center text-sm font-light sm:text-lg p-5"> */}
-        <p className="text-white text-shadow-lg">
+      <div className="bg-[#E5E5E5] flex items-center justify-center h-44 sm:h-80 w-full text-center text-sm font-light p-5 lib-bg bg-cover">
+        <p className="text-xl sm:text-3xl text-white text-shadow-lg">
           Desde 2008 atuando apenas com Direito Previdenciário em todo estado do Rio de Janeiro,
           somos advogados especialistas em ações para concessão e revisão de benefícios do INSS.
         </p>
@@ -72,7 +81,13 @@ const Slide1 = () => {
 const Slide2 = () => {
   return (
     <SlideContainer>
-      <img className={"object-cover w-full h-full"} src="/escritorio.jpg" />
+      <div className="bg-[#E5E5E5] flex items-center justify-center h-44 sm:h-80 w-full text-center text-sm font-light sm:text-lg p-5 office-bg bg-cover">
+        <a href="#na_midia">
+          <p className="text-3xl text-white text-shadow-lg">
+            Confira nossas participações na mídia
+          </p>
+        </a>
+      </div>
     </SlideContainer>
   );
 };
@@ -81,9 +96,9 @@ const Slide3 = () => {
   return (
     <div className="bg-[#E5E5E5] flex items-center justify-center h-44 sm:h-80 w-full text-center text-sm font-light sm:text-lg p-5 judgement-bg bg-cover">
       <a href="#insalubridade">
-        <p className="text-white text-shadow-lg">Insalubridade e periculosidade</p>
-        <p className="text-white text-shadow-lg">-</p>
-        <p className="text-white text-shadow-lg">Concessão e revisão de aposentadorias especiais</p>
+        <p className="text-xl sm:text-3xl text-white text-shadow-lg">Insalubridade e periculosidade</p>
+        <p className="text-xl sm:text-3xl text-white text-shadow-lg">-</p>
+        <p className="text-xl sm:text-3xl text-white text-shadow-lg">Concessão e revisão de aposentadorias especiais</p>
       </a>
     </div>
   );
