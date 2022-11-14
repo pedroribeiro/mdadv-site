@@ -12,6 +12,8 @@ import {
 
 import axios from "axios";
 
+const API_URL = process.env.REACT_APP_API_URL
+
 export default function Home({ posts }) {
   return (
     <Layout>
@@ -28,11 +30,19 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-  const res = await axios.get(`http://medeirosadv.adv.br/wp-json/wp/v2/posts`);
+  try {
+    const res = await axios.get(`${API_URL}/wp-json/wp/v2/posts`);
+    return {
+      props: {
+        posts: res.data,
+      },
+    };
+  } catch (e) {
 
-  return {
-    props: {
-      posts: res.data,
-    },
-  };
+    return {
+      props: {
+        posts: [],
+      }
+    }
+  }
 }

@@ -6,6 +6,8 @@ import axios from "axios";
 import { getFormattedDate } from "@utils/helpers";
 // import { getPostBySlug, getPostsSlugs } from "@utils/posts";
 
+const API_URL = process.env.REACT_APP_API_URL
+
 export default function Post({ post }) {
   return (
     <Layout>
@@ -31,7 +33,7 @@ export default function Post({ post }) {
 }
 
 export async function getStaticPaths() {
-  const res = await axios.get(`http://medeirosadv.adv.br/wp-json/wp/v2/posts`);
+  const res = await axios.get(`${API_URL}/wp-json/wp/v2/posts`);
 
   const paths = res.data.map((post) => ({
     params: { id: String(post.id) },
@@ -44,7 +46,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const res = await axios.get(`http://medeirosadv.adv.br/wp-json/wp/v2/posts/${params.id}`);
+  const res = await axios.get(`${API_URL}/wp-json/wp/v2/posts/${params.id}`);
 
   return { props: { post: { ...res.data, date: getFormattedDate(res.data.date) } } };
 }
