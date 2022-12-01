@@ -72,34 +72,34 @@ export const Insalubridade = () => {
           cadmio, cromo, mercúrio, benzeno, entre outros):{" "}
         </h2>
         <br />
-        <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2020/12/acordao-3.pdf">
+        <a target="_blank" href="http://api.medeirosadv.adv.br/wp-content/uploads/2020/12/acordao-3.pdf">
           Processo n. 0173985-45.2017.4.02.5101
         </a>
         <br />
-        <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2020/12/acordao1.pdf">
+        <a target="_blank" href="http://api.medeirosadv.adv.br/wp-content/uploads/2020/12/acordao1.pdf">
           Processo n. 0007972-61.2014.4.02.5101
         </a>
 
         <br />
-        <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2020/12/acordao-31.pdf">
+        <a target="_blank" href="http://api.medeirosadv.adv.br/wp-content/uploads/2020/12/acordao-31.pdf">
           Processo n. 0086879-16.2015.4.02.5101
         </a>
         <br />
 
         <h2>- Exposição a ruídos acima dos limites de tolerância:</h2>
         <br />
-        <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-8-Celso.pdf">Processo n. 5002016-73.2019.4.02.5110</a>
+        <a target="_blank" href="http://api.medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-8-Celso.pdf">Processo n. 5002016-73.2019.4.02.5110</a>
         <br />
-        <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-9-Francisco.pdf">Processo n. 5001146-04.2019.4.02.5118</a>
+        <a target="_blank" href="http://api.medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-9-Francisco.pdf">Processo n. 5001146-04.2019.4.02.5118</a>
         <br />
 
         <h2>- Vigilantes: </h2>
         <br />
-        <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-1-Valdemir-Elias-compressed.pdf">Processo n. 5002432-51.2018.4.02.5118</a>
+        <a target="_blank" href="http://api.medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-1-Valdemir-Elias-compressed.pdf">Processo n. 5002432-51.2018.4.02.5118</a>
         <br />
-        <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-2-Celio-Pinto.pdf">Processo n. 5015172-58.2019.4.02.5101</a>
+        <a target="_blank" href="http://api.medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-2-Celio-Pinto.pdf">Processo n. 5015172-58.2019.4.02.5101</a>
         <br />
-        <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-3-Marcelo.pdf">Processo n. 0208875-54.2017.4.02.5151</a>
+        <a target="_blank" href="http://api.medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-3-Marcelo.pdf">Processo n. 0208875-54.2017.4.02.5151</a>
         <br />
 
         <h2>
@@ -107,15 +107,15 @@ export const Insalubridade = () => {
           microorganismos e parasitas):{" "}
         </h2>
         <br />
-        <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-4-Andre-compressed.pdf">Processo n. 0102184-69.2017.4.02.5101</a>
+        <a target="_blank" href="http://api.medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-4-Andre-compressed.pdf">Processo n. 0102184-69.2017.4.02.5101</a>
         <br />
-        <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-5-Alceu.pdf">Processo n. 0171616-78.2017.4.02.5101</a>
+        <a target="_blank" href="http://api.medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-5-Alceu.pdf">Processo n. 0171616-78.2017.4.02.5101</a>
         <br />
         <h2>- Exposição a correntes elétricas superiores a 250 volts: </h2>
         <br />
-        <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-10-Fernando.pdf">Processo n. 5001556-65.2019.4.02.5117</a>
+        <a target="_blank" href="http://api.medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-10-Fernando.pdf">Processo n. 5001556-65.2019.4.02.5117</a>
         <br />
-        <a target="_blank" href="http://medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-11-Marcelo-compactado.pdf">Processo n. 5001557-50.2019.4.02.5117</a>
+        <a target="_blank" href="http://api.medeirosadv.adv.br/wp-content/uploads/2022/10/Jurisprudencia-11-Marcelo-compactado.pdf">Processo n. 5001557-50.2019.4.02.5117</a>
         <br />
         <p>
           Observação: Os julgados acima são exemplificativos, havendo possibilidade de enquadramento especial
