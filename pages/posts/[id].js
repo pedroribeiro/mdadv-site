@@ -16,7 +16,7 @@ export default function Post({ post }) {
         description={post.excerpt.rendered.replace(/<\/?[^>]+(>|$)/gi, "").replace("[&hellip;]", "...")}
       />
 
-      <article className="m-8">
+      <article className="m-8 text-black">
         <header className="text-center">
           <h1>{post.title.rendered}</h1>
           <br />
