@@ -23,7 +23,6 @@ export default function Home({ posts }) {
       <CasosJulgados posts={posts} />
       <NaMidia />
       <Insalubridade />
-      <Revisao />
       <Consultoria />
     </Layout>
   );

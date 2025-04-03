@@ -41,21 +41,17 @@ export const CasosJulgados = ({ posts }) => {
               <div key={index} className={clsx("block ", { hidden: !show })}>
                 <article key={post.slug}>
                   <header className="mb-2 flex flex-col items-center ">
-                    <Link href={"/posts/[id]"} as={`/posts/${post.id}`} passHref>
-                      <a target="_blank" className="font-bold italic text-xl sm:text-3xl">
-                        <h3 className="mb-2">{post.title.rendered}</h3>
-                      </a>
+                    <Link href={"/posts/[id]"} as={`/posts/${post.id}`} className="font-bold italic text-xl sm:text-3xl" passHref>
+                      <h3 className="mb-2">{post.title.rendered}</h3>
                     </Link>
 
-                    <Link href={"/posts/[id]"} as={`/posts/${post.id}`} passHref>
-                      <a target="_blank" className="font-bold italic text-xl sm:text-3xl">
-                        <div className="flex items-center ">
-                          <div className="w-5 h-5">
-                            <img className="rounded-md " src="plusSIcon.svg" alt="plus icon" />
-                          </div>
-                          <p className="ml-2">saiba mais</p>
+                    <Link href={"/posts/[id]"} as={`/posts/${post.id}`} className="font-bold italic text-xl sm:text-3xl" passHref>
+                      <div className="flex items-center ">
+                        <div className="w-5 h-5">
+                          <img className="rounded-md " src="plusSIcon.svg" alt="plus icon" />
                         </div>
-                      </a>
+                        <p className="ml-2">saiba mais</p>
+                      </div>
                     </Link>
                   </header>
                 </article>

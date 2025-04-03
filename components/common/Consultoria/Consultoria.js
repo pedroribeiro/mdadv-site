@@ -2,7 +2,7 @@ import { Title } from "@components/layout/Title";
 
 export const Consultoria = () => {
   return (
-    <section id="consultoria_e_planejamento_previdenciario" className="full-bleed-dark-grey p-5">
+    <section id="consultoria_e_planejamento_previdenciario" className="full-bleed-light-grey p-5">
       <div className="text-black text-center">
 
         <Title text={"Consultoria e"} icon="lupa" />
